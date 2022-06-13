@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajouter proposition</title>
+    {% load static %} <link href="{% static "core/css/bootstrap.min.css" %}" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        nbps nbps nbps
+        <a href="" class="navbar-logo h1 text-success" style="text-decoration:none">BlassaBlassa</a> 
+          
+        
+        <div class="collapse navbar-collapse" id="slashes" style="position: absolute;left:35%">
+          <ul class="navbar-nav mr-auto" >
+            <li class="nav-item active">
+              <a class="nav-link" href="/core/profile" >My profile </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/core/logout">log out</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success" href="/covoiturage/addProposition">add ride</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/covoiturage/wantProp">Find ride</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/covoiturage/FAQ">Ask Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/covoiturage/aboutUs">About</a>
+              </li>
+          </ul>
+          
+          nbps nbps nbps
+          
+        <form class="form-inline my-2 my-lg-0" style="display: flex;
+        align-items: center;">
+            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success " type="submit" >Search</button>
+        </form>
+          
+        </div>
+      </nav>
+
+    <h1>ajouter proposition</h1>
+    <p>This page is rendered as a Django Template</p>
+    <h3>Happy Learning :)</h3>
+
+
+
+    <!-------------------------here is my form----------------------->
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="files">info trajet:</label>
+        <p><label for="depart">depart</label></p>
+        <input type="text" id="depart" name="depart" placeholder="Enter depart" />
+        <p><label for="arrivee">arrivee</label></p>
+        <input type="text" id="arrivee" name="arrivee" placeholder="Enter arrivee" />
+        <p><label for="date">date</label></p>
+        <input type="date" id="date" name="date" placeholder="date" />
+        <p><label for="places_libres">places libres</label></p>
+        <input type="text" id="places_libres" name="places_libres" placeholder="nombre des places libres" />
+        <p><label for="cotisation">cotisation</label></p>
+        <input type="" id="cotisation" name="cotisation" placeholder="cotisation" />
+        <p><label for="description">description</label></p>
+        <input type="" id="description" name="description" placeholder="description" />
+        
+        <input type="submit" value="ajouter">
+      </form>
+</body>
+</html>

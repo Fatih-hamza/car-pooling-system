@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is my profile</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>{{info.first_name}}</div>
+        <input type="text" name="first_name" placeholder="change first name">
+        <div>{{info.last_name}}</div>
+        <input type="text" name="last_name" placeholder="change last name">
+        <img src="{{info.profile_pic}}" alt="">
+        <input type="file" name="image">
+        <div>{{info.email}}</div>
+        <input type="email" name="email" placeholder="change email">
+        <p>{{info.description}}</p>
+        <textarea name="description" id="" cols="30" rows="6"></textarea>
+        <div>{{info.number}}</div>
+        <input type="text" name="number" placeholder="change number">
+
+        <input type="submit" value="submit">
+    </form>
+    <!--
+    {% if voiture.modele %}
+        <div>{{voiture.modele}}</div>
+    {% endif %}
+    {% if voiture.marque %}
+        <div>{{voiture.marque}}</div>
+    {% endif %}
+    {% if voiture.voiture_pic %}
+        <img src="{{voiture.voiture_pic}}" alt="">
+    {% endif %}
+
+    <h5>Retours</h5>
+    {% for cmnt in commnts%}
+        <img src="{{ cmnt.img }}" alt="" style="width: 40px; height:40px">
+        <div>{{ cmnt.name }}</div> 
+        <div>{{ cmnt.rating }}</div>
+        <div>{{ cmnt.description }}</div>
+    {% endfor %}
+    -->
+
+
+</body>
+</html>

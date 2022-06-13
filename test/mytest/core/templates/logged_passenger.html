@@ -1,0 +1,72 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+
+    <h1>BlassaBlassa</h1>
+    <div id="slashes">
+        <ul class="navbar-nav ms-auto"> 
+            <li><a href="/core/profile" class="nav-link">My profile</a></li>
+            <li><a href="/core/logout" class="nav-link">Log out</a></li>
+            <li><a href="/covoiturage/wantProp" class="nav-link">Find ride</a></li>
+            <li><a href="/covoiturage/FAQ" class="nav-link">Ask Me</a></li>
+            <li><a href="/covoiturage/aboutUs" class="nav-link">About</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    {% load static %} <link href="{% static "core/css/bootstrap.min.css" %}" rel="stylesheet">
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        nbps nbps nbps
+        <a href="" class="navbar-logo h1 text-success" style="text-decoration:none">BlassaBlassa</a> 
+          
+        
+        <div class="collapse navbar-collapse" id="slashes" style="position: absolute;left:35%">
+          <ul class="navbar-nav mr-auto" >
+            <li class="nav-item active">
+              <a class="nav-link text-success" href="/core/profile" >My profile </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/core/logout">log out</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/covoiturage/wantProp">Find ride</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/covoiturage/FAQ">Ask Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/covoiturage/aboutUs">About</a>
+              </li>
+          </ul>
+          
+          nbps nbps nbps
+          
+        <form class="form-inline my-2 my-lg-0" style="display: flex;
+        align-items: center;">
+            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success " type="submit" >Search</button>
+        </form>
+          
+        </div>
+      </nav>
